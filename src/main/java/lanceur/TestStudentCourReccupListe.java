@@ -23,6 +23,7 @@ public class TestStudentCourReccupListe {
 			 s= em.find(Student.class, 1L);
 			Set<Student>students=c.getStudents();
 			students.size();
+			c.setTitle("Math");
 			txn.commit();
 			
 		}catch(Exception e) {
